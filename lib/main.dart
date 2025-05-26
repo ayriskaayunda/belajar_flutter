@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/meet_lima/tugas5_flutter.dart';
+import 'package:belajar_flutter/meet_enam/tugas6_flutter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: TugasLima(),
+      home: TugasEnam(),
     );
   }
 }
