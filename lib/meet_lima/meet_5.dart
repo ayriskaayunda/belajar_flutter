@@ -96,7 +96,11 @@ class _MeetLimaState extends State<MeetLima> {
           nilaiTambah = 0;
         });
       },
-      child: Image.asset("assets/images/jokowi.jpg", width: 200, height: 200),
+      child: Image.asset(
+        "assets/images/butterfly.png",
+        width: 200,
+        height: 200,
+      ),
     );
   }
 
