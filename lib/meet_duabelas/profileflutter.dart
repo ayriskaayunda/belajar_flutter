@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyProfile extends StatelessWidget {
-  const MyProfile({super.key});
+class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +23,7 @@ class MyProfile extends StatelessWidget {
                 backgroundColor: Colors.blueGrey,
               ),
               const SizedBox(height: 20),
+              buildContainer(),
             ],
           ),
         ),
