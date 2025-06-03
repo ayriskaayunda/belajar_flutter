@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/meet_duabelas/tugasdelapan.flutter.dart';
+import 'package:belajar_flutter/Tugas%2010/tugassepuluh.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           builders: {TargetPlatform.android: CupertinoPageTransitionsBuilder()},
         ),
       ),
-      home: Tugasdelapan(),
+      home: Tugas10(),
     );
   }
 }

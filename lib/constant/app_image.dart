@@ -14,4 +14,6 @@ class AppImage {
   static const String tennis = "$asset/tennis.jpg";
   static const String americanfootball = "$asset/american-football.jpg";
   static const String golf = "$asset/Golf.jpg";
+
+  static var placeholder;
 }
