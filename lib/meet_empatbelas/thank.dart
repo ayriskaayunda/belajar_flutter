@@ -1,6 +1,5 @@
+import 'package:belajar_flutter/meet_empatbelas/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:ppkd_b_2/meet_14/meet_b/thanks_screen.dart';
-import 'package:ppkd_b_2/utils/button.dart';
 
 class Meet14b extends StatefulWidget {
   const Meet14b({super.key});
@@ -67,14 +66,13 @@ class _Meet14bState extends State<Meet14b> {
             ),
             TextButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder:
-                        (context) =>
-                            HalamanTerimakasih(email: _emailController.text),
-                  ),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder:
+                //         (context) => HalamanTerimakasih(nama: _, kota: kota),
+                //   ),
+                // );
               },
               child: Text("Lanjut"),
             ),

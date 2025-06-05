@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 
 class Tugasdelapan extends StatefulWidget {
   const Tugasdelapan({super.key});
-
+  static const String id = "/tugasdelapanflutter";
+  //
   @override
   State<Tugasdelapan> createState() => _TugasdelapanState();
 }

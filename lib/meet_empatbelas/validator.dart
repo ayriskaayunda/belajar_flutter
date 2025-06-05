@@ -66,14 +66,14 @@ class _Meet14bState extends State<Meet14b> {
             ),
             TextButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder:
-                        (context) =>
-                            HalamanTerimakasih(email: _emailController.text),
-                  ),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder:
+                //         (context) =>
+                //             HalamanTerimakasih(email: _emailController.text),
+                //   ),
+                // );
               },
               child: Text("Lanjut"),
             ),
