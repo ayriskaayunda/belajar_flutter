@@ -1,7 +1,7 @@
 import 'package:belajar_flutter/constant/app_image.dart';
 import 'package:belajar_flutter/constant/app_style.dart';
 import 'package:belajar_flutter/helper/preferance.dart';
-import 'package:belajar_flutter/meet_enambelas/loginscreenapp.dart';
+import 'package:belajar_flutter/tugas%2014/view/user_list_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -23,10 +23,15 @@ class _SplashScreenState extends State<SplashScreen> {
       //     (route) => false,
       //   );
       // } else {
-      Navigator.pushNamedAndRemoveUntil(
+      // Navigator.pushNamedAndRemoveUntil(
+      //   context,
+      //   LoginScreenApp.id,
+      //   (route) => false,
+      // );
+      Navigator.pushAndRemoveUntil(
         context,
-        LoginScreenApp.id,
-        (route) => false,
+        MaterialPageRoute(builder: (context) => CatScreen()),
+        (Route) => false,
       );
       // }
     });
