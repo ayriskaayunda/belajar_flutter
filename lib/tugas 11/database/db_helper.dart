@@ -39,4 +39,23 @@ class DBHelperAktivitas {
 
     return List.generate(maps.length, (i) => DaftarModel.fromMap(maps[i]));
   }
+<<<<<<< HEAD
+=======
+
+  // update
+  static Future<void> updateDaftar(DaftarModel daftar) async {
+    final db = await DBHelperAktivitas.db();
+    await db.update(
+      'users',
+      daftar.toMap(),
+      where: 'id = ?',
+      whereArgs: [daftar.id],
+    );
+  }
+
+  static Future<void> deleteDaftar(int id) async {
+    final db = await DBHelperAktivitas.db();
+    await db.delete('users', where: 'id = ?', whereArgs: [id]);
+  }
+>>>>>>> 41680eee2d412126f23e497d653564150e64ae70
 }

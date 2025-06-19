@@ -1,5 +1,9 @@
 import 'package:belajar_flutter/tugas%2011/database/db_helper.dart';
 import 'package:belajar_flutter/tugas%2011/database/model/user_model3.dart';
+<<<<<<< HEAD
+=======
+import 'package:belajar_flutter/tugas%2011/edit_daftar_screen.dart';
+>>>>>>> 41680eee2d412126f23e497d653564150e64ae70
 import 'package:flutter/material.dart';
 
 class DaftarAktivitas extends StatefulWidget {
@@ -25,6 +29,10 @@ class _DaftarAktivitasState extends State<DaftarAktivitas> {
 
   Future<void> muatData() async {
     final data = await DBHelperAktivitas.getAllDaftar();
+<<<<<<< HEAD
+=======
+    print('Loaded data: $data');
+>>>>>>> 41680eee2d412126f23e497d653564150e64ae70
     setState(() {
       daftarAktivitas = data;
     });
@@ -127,14 +135,55 @@ class _DaftarAktivitasState extends State<DaftarAktivitas> {
                 child: ListView.builder(
                   itemCount: daftarAktivitas.length,
                   itemBuilder: (context, index) {
+<<<<<<< HEAD
                     final Siswa = daftarAktivitas[index];
+=======
+                    final daftar = daftarAktivitas[index];
+>>>>>>> 41680eee2d412126f23e497d653564150e64ae70
                     return ListTile(
                       leading: CircleAvatar(child: Text('${index + 1}')),
                       title: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
+<<<<<<< HEAD
                         children: [Text(Siswa.nama), Text(Siswa.aktivitas)],
                       ),
                       subtitle: Text('Umur: ${Siswa.umur}'),
+=======
+                        children: [Text(daftar.nama), Text(daftar.aktivitas)],
+                      ),
+                      subtitle: Text('Umur: ${daftar.umur}'),
+                      trailing: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          IconButton(
+                            icon: Icon(Icons.edit),
+                            onPressed: () async {
+                              // Pass a callback to reload the data after editing
+                              await Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder:
+                                      (_) => EditDaftarScreen(
+                                        daftar: daftar,
+                                        onUpdate: () {
+                                          muatData(); // Refresh data when update is complete
+                                        },
+                                      ),
+                                ),
+                              );
+                            },
+                          ),
+                          // SizedBox(width: 5),
+                          IconButton(
+                            icon: Icon(Icons.delete),
+                            onPressed: () async {
+                              await DBHelperAktivitas.deleteDaftar(daftar.id!);
+                              muatData();
+                            },
+                          ),
+                        ],
+                      ),
+>>>>>>> 41680eee2d412126f23e497d653564150e64ae70
                     );
                   },
                 ),
