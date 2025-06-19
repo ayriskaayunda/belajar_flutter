@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/meet_empatbelas/model/product_model.dart';
+import 'package:belajar_flutter/meet_14/model/product_model.dart';
 import 'package:flutter/material.dart';
 
 class ModelWidget extends StatefulWidget {

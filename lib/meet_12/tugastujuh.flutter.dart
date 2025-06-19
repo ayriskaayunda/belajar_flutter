@@ -1,5 +1,6 @@
 import 'package:belajar_flutter/constant/app_color.dart';
 import 'package:belajar_flutter/constant/app_style.dart';
+import 'package:belajar_flutter/meet_22/view/users_list_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -30,6 +31,7 @@ class _TugastujuhState extends State<Tugastujuh> {
       _buildCategory(),
       _buildDate(),
       _buildTime(),
+      UsersListScreen(),
       Center(child: Text("Halaman 2")),
       Center(child: Text("Halaman 3")),
     ];
@@ -132,6 +134,16 @@ class _TugastujuhState extends State<Tugastujuh> {
                 onTap: () {
                   setState(() {
                     _selectedIndex = 4;
+                  });
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.assignment),
+                title: Text("api"),
+                onTap: () {
+                  setState(() {
+                    _selectedIndex = 5;
                   });
                   Navigator.pop(context);
                 },

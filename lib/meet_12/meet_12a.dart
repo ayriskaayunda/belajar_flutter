@@ -1,7 +1,7 @@
 import 'package:belajar_flutter/constant/app_color.dart';
 import 'package:belajar_flutter/constant/app_format.dart';
 import 'package:belajar_flutter/constant/app_style.dart';
-import 'package:belajar_flutter/meet_duabelas/checkbox_custom.dart';
+import 'package:belajar_flutter/meet_12/checkbox_custom.dart';
 import 'package:flutter/material.dart';
 
 class Meet12AInputWidget extends StatefulWidget {

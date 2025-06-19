@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/meet_empatbelas/utils.dart';
+import 'package:belajar_flutter/meet_14/utils.dart';
 import 'package:flutter/material.dart';
 
 class Meet14b extends StatefulWidget {
@@ -70,8 +70,7 @@ class _Meet14bState extends State<Meet14b> {
                 //   context,
                 //   MaterialPageRoute(
                 //     builder:
-                //         (context) =>
-                //             HalamanTerimakasih(email: _emailController.text),
+                //         (context) => HalamanTerimakasih(nama: _, kota: kota),
                 //   ),
                 // );
               },

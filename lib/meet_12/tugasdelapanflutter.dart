@@ -1,5 +1,5 @@
-import 'package:belajar_flutter/meet_duabelas/profileflutter.dart';
-import 'package:belajar_flutter/meet_duabelas/tugastujuh.flutter.dart';
+import 'package:belajar_flutter/meet_12/profileflutter.dart';
+import 'package:belajar_flutter/meet_12/tugastujuh.flutter.dart';
 import 'package:flutter/material.dart';
 
 class Tugasdelapan extends StatefulWidget {

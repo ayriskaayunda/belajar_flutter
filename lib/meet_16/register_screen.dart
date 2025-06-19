@@ -1,6 +1,6 @@
 import 'package:belajar_flutter/constant/app_color.dart';
-import 'package:belajar_flutter/meet_enambelas/database/db_helper.dart';
-import 'package:belajar_flutter/meet_enambelas/model/user_model.dart';
+import 'package:belajar_flutter/meet_16/database/db_helper.dart';
+import 'package:belajar_flutter/meet_16/model/user_model.dart';
 import 'package:flutter/material.dart';
 
 class RegisterScreenApp extends StatefulWidget {
